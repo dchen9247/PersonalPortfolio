@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <style>
+        body{
+            font-family: "Source Sans 3";
+            margin: 0
+        }
+        html {
+            scroll-padding-top: 70px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav li {
+            float: right;
+            border-left: 1px solid #bbb;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover:not(.active) {
+            background-color: #111;
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+        nav li:last-child {
+            border-left: none;
+        }
+        #introcontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #about{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #aboutmetext{
+            flex: 1;
+            text-align: center
+        }
+        #aboutmetext p{
+            text-align:left
+        }
+        #aboutmeimage img {
+            max-width: 300px; /* Adjust size as needed */
+            height: auto;
+        }
+        #skills p{
+            display: inline-block;
+            padding: 20px 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: #EBEBEB;
+            color: #444444;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 5%;
+            height: 10%;
+            text-align: center
+        }
+        #introtext {
+            flex: 1;
+        }
+        #introimage img {
+            max-width: 800px; /* Adjust size as needed */
+            height: auto;
+            margin-top: 100px;
+        }
+        h1{
+            font-size: 3em;
+            color: #444444;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        h2{
+            color: #7A7A7A;
+            margin-top: 0;
+            margin-top: 0;
+            font-size: 2em
+        }
+        h3{
+            font-size: 1.5em;
+            color: #7A7A7A;
+        }
+        p{
+            color: #7A7A7A;
+            font-size: 16px
+        }
+        .about-me-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 25%;
+            text-align: center
+        }
+        .about-me-button:hover {
+            background-color: #111;
+        }
+        #github{
+            width: 10%;
+            height: auto
+        } 
+        #linkedin{
+            width: 10%;
+            height: auto
+        }
+        #experience{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #experiencetext{
+            flex: 1;
+            text-align: left;
+            margin-left: 100px;
+        }
+        #experienceimgs img {
+            display: block;
+            width: 500px;
+            height: auto;
+        }
+        #experiencetext li{
+            color: #606060
+        }
+        form{
+            text-align: center;
+            color: #606060
+        }
+        #contact{
+            text-align: center
+        }
+        #sendbutton{
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 10%;
+            text-align: center
+        }
+        #footer{
+            background-color: #F7F6F6;
+            color: #606060;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px
+        }
+        #footer a {
+            color: #606060;
+        }
+    </style>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#introcontainer">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div id = "introcontainer">
+        <div id = "introtext">
+            <h1>David Chen</h1>
+            <h2>Software Engineer</h2>
+            <p>Hello! Welcome to my software portfolio!</p>
+            <a href="#about" class="about-me-button">About Me</a>
+            <div id = "externalSites">
+                <a href = "https://github.com/dchen9247">
+                    <img id = "github" src = "GitHub.png" alt = "github">
+                </a>
+                <a href = https://www.linkedin.com/in/david-chen-42543929a>
+                    <img id = "linkedin" src = "LinkedIn.png" alt = "linkedin">
+                </a>
+            </div>
+        </div>
+        <div id = "introimage">
+            <img src = "citySkyline.jpg" alt = "cityskyline">
+        </div>
+    </div>
+
+    <div id = "about">
+        <div id = "aboutmetext">
+            <h2>About Me</h2>
+            <p>Hello, my name is David Chen, and I'm a sophomore at the University of Maryland studying computer science. Over the past few years, I have gained a breadth of experience with software development for robotics projects, data analysis programs, and various websites. However, I am always striving to learn and expand my skill set. </p>
+            <br>
+            <div id = "skills">
+                <h3>Skills</h3>
+                <p>Java</p>
+                <p>C</p>
+                <p>Python</p>
+                <p>OCaml</p>
+                <p>JavaScript</p>
+            </div>
+        </div>
+        <div id = "aboutmeimage">
+            <img src = "headshot.jpg" alt = "headshot">
+        </div>
+    </div>
+
+    <div id = "experience">
+        <div id = "experiencetext">
+            <h2>Experience</h2>
+            <h3>Coursework</h3>
+            <ul>
+                <li>Advanced Data Structures</li>
+                <li>Introduction to Web Developmemt</li>
+                <li>Object-Oriented Programming II</li>
+                <li>Introduction to Computer Systems</li>
+                <li>Discrete Structures</li>
+                <li>Organization of Programming Languages</li>
+                <li>Algorithms(Honors)</li>
+            </ul>
+            <h3>Weather Gage Technologies</h3>
+            <ul>
+                <li>Developed an application for tracking and analyzing vehicle data </li>
+                <li> Studied UI/UX, SQL, JavaFX, and JDBC</li>
+                <li><a href = "https://weathergagetech.com/">Learn more</a></li>
+            </ul>
+        </div>
+        <div id = "experienceimgs">
+            <img src = "OnSiteWork.png" alt = "onsite">
+            <br>
+            <img src = "WeatherGage.png" alt = "weathergage">
+        </div>
+    </div>
+
+    <div id = "contact">
+        <h2>Get in Touch</h2>
+        <form action = "mailto:dchen112@terpmail.umd.edu" method = "post" enctype = "text/plain">
+            <strong><label>Name: <input type="text" name="name"/></label></strong>
+			<strong><label>Email Address: <input type="email" name="email"></label></strong>
+            <br>
+            <br>
+            <textarea rows="25" cols="100">
+            </textarea>
+            <br>
+            <input type="submit" id = "sendbutton" value="Send">
+
+        </form>
+    </div>
+
+    
+    <div id = "footer">
+        <a href = "https://github.com/dchen9247/PersonalPortfolio">View the Code for this Site</a>
+    </div>
+</body>
